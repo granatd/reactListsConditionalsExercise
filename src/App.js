@@ -36,7 +36,7 @@ class App extends Component {
           <CharComponent
             letter={letter}
             index={index}
-            click={() => this.charComponentClick(index)}
+            click={this.charComponentClick.bind(this, index)}
           />
         );
       });
